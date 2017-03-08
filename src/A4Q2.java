@@ -29,7 +29,7 @@ public class A4Q2 {
         System.out.println(inches*2.54);
        
        // give them the answer 
-        System.out.println( inches + " inches is the same as ");
+        System.out.println( inches + " inches is the same as " + inches*2.54 + " cm");
        
        
        
