@@ -23,7 +23,7 @@ public class A4Q2 {
        System.out.println("Please enter the measurement in inches you wish to convert");
       
        //letting user type in number
-       int inches = input.nextInt();
+       double inches = input.nextDouble();
        
        //convert inches to centimetres 
         System.out.println(inches*2.54);

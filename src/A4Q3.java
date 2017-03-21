@@ -22,10 +22,10 @@ public class A4Q3 {
         System.out.println("Please enter 4 numbers");
 
         //letting user type in number
-        double A = input.nextInt();
-        double B = input.nextInt();
-        double C = input.nextInt();
-        double D = input.nextInt();
+        double A = input.nextDouble();
+        double B = input.nextDouble();
+        double C = input.nextDouble();
+        double D = input.nextDouble();
         
         System.out.println("Your Numbers were " + A  + ", " +  B + ", " +  C + ", " + "and " +  D);
     }
