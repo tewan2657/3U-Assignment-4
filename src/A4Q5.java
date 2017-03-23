@@ -44,22 +44,23 @@ public class A4Q5 {
             // let the user type in their mark they got 
             int mark = input.nextInt();
 
-        }
+        
         
 
         //List their test scores 
-        int percent = first;
+        int percent =  100*(test/mark);
         
         
         
-        
+        }
         System.out.println("Test Scores for " + name);
-        //
+        
         int Num = 0;
         while (Num < 5) {
             Num++;
             System.out.println("test " + Num);
          
         }
+    
     }
 }

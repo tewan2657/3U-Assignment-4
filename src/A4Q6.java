@@ -16,7 +16,9 @@ public class A4Q6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+    //create a scanner 
+        Scanner input = new Scanner(System.in);
+        
         
         
         
