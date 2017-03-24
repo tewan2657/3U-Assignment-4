@@ -134,16 +134,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Sub"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="subActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="mul">
       <Properties>
         <Property name="text" type="java.lang.String" value="Mul"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mulActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="div">
       <Properties>
         <Property name="text" type="java.lang.String" value="Div"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="divActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

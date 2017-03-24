@@ -30,37 +30,47 @@ public class A4Q5 {
             first++;
 
             //Asking the user what they got on thier first test
-            if(first == 1){
-                System.out.println("What was the first test out of?");
-            }else{
+           
                 System.out.println("What was the " + first + " test out of?");
-            }
+            
             // let user enter what the test was out of 
-            int test = input.nextInt();
+            int test1 = input.nextInt();
+            int test2 = input.nextInt();
+            int test3 = input.nextInt();
+            int test4 = input.nextInt();
+            int test5 = input.nextInt();
 
             // ask the user what their mark was 
             System.out.println("What mark did you get?");
 
             // let the user type in their mark they got 
-            int mark = input.nextInt();
+            int mark1 = input.nextInt();
+            int mark2 = input.nextInt();
+            int mark3 = input.nextInt();
+            int mark4 = input.nextInt();
+            int mark5 = input.nextInt();
 
-        
-        
 
-        //List their test scores 
-        int percent =  100*(test/mark);
-        
-        
-        
+            //List their test scores 
+            double percent = 100 * (test1 / mark1);
+             percent = 100 * (test2 / mark2);
+             percent = 100 * (test3 / mark3);
+             percent = 100 * (test4 / mark4);
+             percent = 100 * (test5 / mark5);
+            
+                    
+
+
+
         }
         System.out.println("Test Scores for " + name);
-        
+
         int Num = 0;
         while (Num < 5) {
             Num++;
             System.out.println("test " + Num);
-         
+
         }
-    
+
     }
 }

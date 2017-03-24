@@ -70,10 +70,25 @@ public class A4Q9 extends javax.swing.JFrame {
         });
 
         sub.setText("Sub");
+        sub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subActionPerformed(evt);
+            }
+        });
 
         mul.setText("Mul");
+        mul.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mulActionPerformed(evt);
+            }
+        });
 
         div.setText("Div");
+        div.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,31 +155,72 @@ public class A4Q9 extends javax.swing.JFrame {
     }//GEN-LAST:event_firstActionPerformed
 
     private void secondActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secondActionPerformed
-       
+
     }//GEN-LAST:event_secondActionPerformed
 
     private void resultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resultActionPerformed
-       String firstText = first.getText(); 
-        String secondText = second.getText();
-       // convert Strings to integers
-       int first = Integer.parseInt(firstText);
-       int second = Integer.parseInt(secondText);
-       
-       int add = first + second; 
-        
-        
+
     }//GEN-LAST:event_resultActionPerformed
 
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
+        // grab the first & second number as a string
         String firstText = first.getText(); 
         String secondText = second.getText();
        // convert Strings to integers
        int first = Integer.parseInt(firstText);
        int second = Integer.parseInt(secondText);
        
+       // add the  numbers
        int add = first + second;
+       // give the result in the result text area 
+       result.setText("" + add);
        
     }//GEN-LAST:event_addActionPerformed
+
+    private void subActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subActionPerformed
+        // grab the first & second number as a string
+        String firstText = first.getText(); 
+        String secondText = second.getText();
+       // convert Strings to integers
+       int first = Integer.parseInt(firstText);
+       int second = Integer.parseInt(secondText);
+       
+       // Subtract the numbers
+       int sub = first - second;
+       
+       // give the result in the result text area 
+       result.setText("" + sub);
+    }//GEN-LAST:event_subActionPerformed
+
+    private void mulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mulActionPerformed
+         // grab the first & second number as a string
+        String firstText = first.getText(); 
+        String secondText = second.getText();
+       // convert Strings to integers
+       int first = Integer.parseInt(firstText);
+       int second = Integer.parseInt(secondText);
+       
+       // multiply the numbers
+       int mul = first*second;
+       
+       // give the result in the result text area 
+       result.setText("" + mul);
+    }//GEN-LAST:event_mulActionPerformed
+
+    private void divActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divActionPerformed
+        // grab the first & second number as a string
+        String firstText = first.getText(); 
+        String secondText = second.getText();
+       // convert Strings to integers
+       int first = Integer.parseInt(firstText);
+       int second = Integer.parseInt(secondText);
+       
+       // divide the numbers
+       int div = first/second;
+       
+       // give the result in the result text area 
+       result.setText("" + div);
+    }//GEN-LAST:event_divActionPerformed
 
     /**
      * @param args the command line arguments
